@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://c3of24uwlr43u"]
+
+[ext_resource type="Shader" uid="uid://c6hyme6wd7p5" path="res://tutorial/water2D/uv_texture_offset/water_2d_uv_texture_offset.gdshader" id="1_7xvc6"]
+[ext_resource type="Texture2D" uid="uid://cb30mmcy4j12a" path="res://tutorial/water2D/textures/water_uv_offset.png" id="2_ql54a"]
+
+[resource]
+shader = ExtResource("1_7xvc6")
+shader_parameter/tiled_factor = 10.0
+shader_parameter/aspect_ratio = 1.0
+shader_parameter/uv_offset_texture = ExtResource("2_ql54a")
+shader_parameter/uv_offset_scale = Vector2(0.3, 0.8)
+shader_parameter/wave_size = Vector2(0.04, 0.04)
+shader_parameter/time_scale = 0.02

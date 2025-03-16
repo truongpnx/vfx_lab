@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://crb4urjl8w813"]
+
+[ext_resource type="PackedScene" uid="uid://blo25om7sbper" path="res://tutorial/water2D/water_2d.tscn" id="1_5bf5h"]
+[ext_resource type="Material" uid="uid://dhcnsw4mooyr3" path="res://tutorial/water2D/water_2d_sine_and_texture/water_2d_sine&texture.tres" id="2_54y03"]
+
+[node name="Water2D" instance=ExtResource("1_5bf5h")]
+material = ExtResource("2_54y03")

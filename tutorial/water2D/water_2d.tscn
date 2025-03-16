@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://blo25om7sbper"]
+
+[ext_resource type="Texture2D" uid="uid://80yiofi5b2y4" path="res://tutorial/water2D/textures/water_diffuse.png" id="1_xmb2p"]
+[ext_resource type="Script" uid="uid://cfn27nb6upowe" path="res://tutorial/water2D/water_2d.gd" id="3_slo2v"]
+
+[node name="Water2D" type="Sprite2D"]
+texture_repeat = 2
+texture = ExtResource("1_xmb2p")
+script = ExtResource("3_slo2v")
+
+[connection signal="item_rect_changed" from="." to="." method="calculate_aspect_ratio"]

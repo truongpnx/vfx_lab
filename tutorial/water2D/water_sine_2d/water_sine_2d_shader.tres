@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://yr6vq56afiqg"]
+
+[ext_resource type="Shader" uid="uid://dvmhjvj33j0mb" path="res://tutorial/water2D/water_sine_2d/water_sine_2d_shader.gdshader" id="1_1g7ow"]
+
+[resource]
+shader = ExtResource("1_1g7ow")
+shader_parameter/tiled_factor = Vector2(10, 10)
+shader_parameter/aspect_ratio = 0.5
+shader_parameter/time_scale = Vector2(2, 2)
+shader_parameter/offset_scale = Vector2(1, 0.5)
+shader_parameter/amplitude = Vector2(0.05, 0.08)

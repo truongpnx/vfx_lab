@@ -1,0 +1,18 @@
+[gd_scene load_steps=7 format=3 uid="uid://jkfb8lnswdtu"]
+
+[ext_resource type="PackedScene" uid="uid://blo25om7sbper" path="res://tutorial/water2D/water_2d.tscn" id="1_k05ep"]
+[ext_resource type="Material" uid="uid://dli5hup82hfoq" path="res://tutorial/water2D/water_2d_lighting/water_2d_lighting.tres" id="2_o3c7i"]
+[ext_resource type="Texture2D" uid="uid://80yiofi5b2y4" path="res://tutorial/water2D/textures/water_diffuse.png" id="3_cfk3k"]
+[ext_resource type="Texture2D" uid="uid://b5rgw4y6yavwp" path="res://tutorial/water2D/textures/disk_mask.png" id="3_icrg5"]
+[ext_resource type="Texture2D" uid="uid://2fx6ukc4nh7f" path="res://tutorial/water2D/textures/water_normal.png" id="4_m771r"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_4d13p"]
+diffuse_texture = ExtResource("3_cfk3k")
+normal_texture = ExtResource("4_m771r")
+
+[node name="Water2D" instance=ExtResource("1_k05ep")]
+material = ExtResource("2_o3c7i")
+texture = SubResource("CanvasTexture_4d13p")
+
+[node name="PointLight2D" type="PointLight2D" parent="." index="0"]
+texture = ExtResource("3_icrg5")

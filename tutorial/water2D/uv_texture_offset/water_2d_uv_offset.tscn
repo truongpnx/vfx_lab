@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyqsd2xjyuv7f"]
+
+[ext_resource type="PackedScene" uid="uid://blo25om7sbper" path="res://tutorial/water2D/water_2d.tscn" id="1_68hf2"]
+[ext_resource type="Material" uid="uid://c3of24uwlr43u" path="res://tutorial/water2D/uv_texture_offset/water_2d_uv_texture_offset.tres" id="2_l72w7"]
+
+[node name="Water2D" instance=ExtResource("1_68hf2")]
+material = ExtResource("2_l72w7")
